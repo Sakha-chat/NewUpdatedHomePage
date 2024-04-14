@@ -19,6 +19,21 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
   }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .form-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
   .btn {
     display: inline-block;
     background-color: #E58538;
@@ -36,8 +51,22 @@
 
 <div class="container">
   <h1>Delete Account Request</h1>
-  <p>If you would like to request the deletion of your account and associated data, please click the button below:</p>
-  <a href="mailto:sakhachat9@gmail.com?subject=Delete Account Request" class="btn">Request Account Deletion</a>
+  <p>If you would like to request the deletion of your account and associated data, please fill out the form below:</p>
+  <form action="mailto:sakhachat9@gmail.com" method="post" enctype="text/plain">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <button type="submit" class="btn">Request Account Deletion</button>
+  </form>
 </div>
 
 </body>
