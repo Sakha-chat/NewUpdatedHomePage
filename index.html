@@ -174,44 +174,53 @@
           <div class="item">
             <div class="msg">
               <div class="messages__item messages__item--operator">
-                <p style="font-size: 20px;width:100%;align-items: last baseline; display: flex;">Hello</p>
+                <p style="font-size: 20px;width:100%;align-items: last baseline; display: flex;">haribol</p>
                 <div class="icon icon-right"> <img class="user" src="man1.png" alt=""> </div>
               </div>
               <div class="messages__item messages__item--visitor">
                 <div class="icon icon-left"> <img class="user" src="krishna1.png" alt=""> </div>
-                <p style="font-size: 20px; width:100%;align-items: last baseline; display: flex;">Hare Krishna</p>
+                <p style="font-size: 20px; width:100%;align-items: last baseline; display: flex;">Haribol. I am servant of Krishna. I have no capacity, but I serve Krishna to my best knowledge. Just like you are serving Krishna to your best knowledge. But Krishna is so kind. He sees the service, not the capacity. I have no capacity. I simply depend on Krishna.</p>
               </div>
               <div class="messages__item messages__item--operator">
-                <p style="font-size: 20px;width:100%;align-items: last baseline; display: flex;">who are you</p>
+                <p style="font-size: 20px;width:100%;align-items: last baseline; display: flex;">What are you doing?</p>
                 <div class="icon icon-right"> <img class="user" src="man1.png" alt=""> </div>
               </div>
               <div class="messages__item messages__item--visitor">
                 <div class="icon icon-left"> <img class="user" src="krishna1.png" alt=""> </div>
-                <p style="font-size: 20px; width:100%;align-items: last baseline; display: flex;">Am your virtual</p>
+                <p style="font-size: 20px; width:100%;align-items: last baseline; display: flex;">I am just experimenting.</p>
               </div>
             </div>
             <div class="messages__item messages__item--operator">
-              <p style="font-size: 20px;width:100%;align-items: last baseline; display: flex;">Hello</p>
+              <p style="font-size: 20px;width:100%;align-items: last baseline; display: flex;">what are you experimenting ?</p>
               <div class="icon icon-right"> <img class="user" src="man1.png" alt=""> </div>
             </div>
             <div class="messages__item messages__item--visitor">
               <div class="icon icon-left"> <img class="user" src="krishna1.png" alt=""> </div>
-              <p style="font-size: 20px; width:100%;align-items: last baseline; display: flex;">Hare Krishna</p>
+              <p style="font-size: 20px; width:100%;align-items: last baseline; display: flex;">I am experimenting with drugs.</p>
             </div>
             <div class="messages__item messages__item--operator">
-              <p style="font-size: 20px;width:100%;align-items: last baseline; display: flex;">who are you</p>
+              <p style="font-size: 20px;width:100%;align-items: last baseline; display: flex;">seriously drugs?</p>
               <div class="icon icon-right"> <img class="user" src="man1.png" alt=""> </div>
             </div>
             <div class="messages__item messages__item--visitor">
               <div class="icon icon-left"> <img class="user" src="krishna1.png" alt=""> </div>
-              <p style="font-size: 20px; width:100%;align-items: last baseline; display: flex;">Am your virtual</p>
+              <p style="font-size: 20px; width:100%;align-items: last baseline; display: flex;">what is this, serious drugs?</p>
+            </div>
+
+            <div class="messages__item messages__item--operator">
+              <p style="font-size: 20px;width:100%;align-items: last baseline; display: flex;">what drugs? that is illegal.</p>
+              <div class="icon icon-right"> <img class="user" src="man1.png" alt=""> </div>
+            </div>
+            <div class="messages__item messages__item--visitor">
+              <div class="icon icon-left"> <img class="user" src="krishna1.png" alt=""> </div>
+              <p style="font-size: 20px; width:100%;align-items: last baseline; display: flex;">No, no. Not that kind of drugs. This is spirinal drug I drug. Chanting Hare Krishna, Hare Krishno, Krishna Krishna, Hare Hare, Hare Rama, Hare Rama, Rama Rama, Hare Hare. This is also drug, but it is not bad. It is very nice. It is the best drug because it awakens your spiritual consciousness</p>
             </div>
 
           </div>
         </div>
         <input type="text" placeholder="Type your message..." style="border-radius: 10px">
       </div>
-      <button class="try-button">Try Chat</button>
+      <button id="sakha-chat-button"  class="try-button">Try Chat</button>
     </div>
 
     <h3>All Leaders are readers. As we know, Knowledge, is power, and one needs the knowledge to grow in life, so we
@@ -231,7 +240,7 @@
       <div class="Sk-description">
         <img id="gif" src="mala.gif" alt="GIF">
       </div>
-      <button class="try-button">Try Chanting</button>
+      <button id="sakha-chanting-button"  class="try-button">Try Chanting</button>
     </div>
 
     <h3>Embark on a journey of self-discovery with our <span class="gradient-text">Challenge Game</span>. Over 50 days,
@@ -247,7 +256,7 @@
       <div class="Sk-description">
         <img class="game-play-img" src="game.png" alt="Image" width="350">
       </div>
-      <button class="try-button">Let's Play?</button>
+      <button id="sakha-games-button"  class="try-button">Let's Play?</button>
     </div>
     <h3>All Leaders are readers. As we know, Knowledge, is power, and one needs the knowledge to grow in life, so we
       have inculcated some of the most useful books, meant for holistic development.</h3>
@@ -358,6 +367,34 @@
     });
 
   </script>
+   <script>
+    var button = document.getElementById("chat-sakha-button");
+
+// Add event listener to the button
+button.addEventListener("click", function() {
+    // Redirect to the specific link when the button is clicked
+    window.location.href = "https://signin.sakha.chat"; // Replace "https://example.com" with your desired link
+});
+
+            var button = document.getElementById("chat-games-button");
+
+// Add event listener to the button
+button.addEventListener("click", function() {
+    // Redirect to the specific link when the button is clicked
+    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSfxyW-U5oXYUr3l1uQc1FnUNMUpisZB9bZ4eIyyoV7zVXMuSQ/viewform?usp=sf_link"; // Replace "https://example.com" with your desired link
+});
+
+
+            var button = document.getElementById("chat-chanting-button");
+
+// Add event listener to the button
+button.addEventListener("click", function() {
+    // Redirect to the specific link when the button is clicked
+    window.location.href = "https://chant.sakha.chat"; // Replace "https://example.com" with your desired link
+});
+
+        
+    </script>
 
 </body>
 
