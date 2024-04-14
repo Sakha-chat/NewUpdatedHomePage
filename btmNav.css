@@ -1,0 +1,31 @@
+.btm-nav-bottom-bar {
+    display: none; /* Initially hide the navbar */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 13%;
+    background-color: #eee;
+    text-align: center;
+    /* max-width: 30em; */
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .btm-nav-icon {
+    font-size: 1.5em;
+    padding: 0.5em;
+    margin: 0.5em;
+    transition: 0.5s ease-in-out;
+    border-radius: 100%;
+    border: 7px solid #eee;
+  }
+  
+  .btm-nav-active {
+    transform: scale(1.25) translateY(-1em);
+    background: linear-gradient(135deg, #23f, #6589ff);
+    border: 7px solid #dcdcdc;
+    color: white;
+  }
+  
