@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!----======== CSS ========-->
+  <!-- vedic book wala css -->
+  <link rel="stylesheet" href="books.css">
+  <!-- slidenavbar css -->
+  <link rel="stylesheet" href="dummy.css">
+  <!-- content(mean the home class div) + some box design-->
+  <link rel="stylesheet" href="dummycontent.css">
+  <!-- Bottom navbar css -->
+  <link rel="stylesheet" href="btmNav.css">
+  <!-- tablet and less screen -->
+  <link rel="stylesheet" href="tempResp.css">
+
+  <!----===== (Boxicons + and More) CSS ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <title>Sakha Home Page</title>
+
+</head>
+
+<body>
+  <nav class="sidebar close">
+    <header>
+      <div class="image-text">
+        <span class="image">
+          <img src="logo.png" alt="">
+        </span>
+
+        <div class="text logo-text">
+          <span class="name">Sakha</span>
+        </div>
+      </div>
+
+      <i class='bx bx-chevron-right toggle'></i>
+    </header>
+
+    <div class="menu-bar">
+      <div class="menu">
+
+        <li class="search-box">
+          <i class='bx bx-search icon'></i>
+          <input type="text" placeholder="Search...">
+        </li>
+
+        <ul class="menu-links">
+          <li class="nav-link">
+            <a href="#">
+              <i class="fas fa-home icon"></i>
+              <!-- <i class='bx bx-home-alt icon'></i> -->
+              <span class="text nav-text">Home</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="https://chant.sakha.chat">
+              <i class="fas fa-om icon"></i>
+              <span class="text nav-text">Chant</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfxyW-U5oXYUr3l1uQc1FnUNMUpisZB9bZ4eIyyoV7zVXMuSQ/viewform?usp=sf_link">
+              <i class="fas fa-gamepad icon"></i>
+              <span class="text nav-text">Games</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="https://vedic.sakha.chat">
+              <i class="fas fa-book icon"></i>
+              <span class="text nav-text">Vedic Books</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="https://signin.sakha.chat">
+              <i class="fas fa-comments icon"></i>
+              <span class="text nav-text">Chat</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bottom-content">
+        <li class="mode">
+          <div class="sun-moon">
+            <i class='bx bx-moon icon moon'></i>
+            <i class='bx bx-sun icon sun'></i>
+          </div>
+          <span class="mode-text text">Dark mode</span>
+
+          <div class="toggle-switch">
+            <span class="switch"></span>
+          </div>
+        </li>
+
+      </div>
+    </div>
+
+  </nav>
+
+  <div class="btm-nav-bottom-bar">
+    <a href="#"><i class="fas fa-home btm-nav-icon btm-nav-active" onclick="change(this)"></i></a>
+    <a href="https://chant.sakha.chat"><i class="fas fa-om btm-nav-icon" onclick="change(this)"></i></a>
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSfxyW-U5oXYUr3l1uQc1FnUNMUpisZB9bZ4eIyyoV7zVXMuSQ/viewform?usp=sf_link"><i
+        class="fas fa-gamepad btm-nav-icon" onclick="change(this)"></i></a>
+    <a href="https://vedic.sakha.chat"><i class="fas fa-book btm-nav-icon" onclick="change(this)"></i></a>
+    <a href="https://signin.sakha.chat"><i class="fas fa-comments btm-nav-icon" onclick="change(this)"></i></a>
+
+    <!-- Mode Toggle -->
+    <div class="mode-switch" style="z-index: 100;" onclick="toggleMode()">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+      <span class="mode-text">Dark Mode</span>
+      <div class="toggle-switch">
+        <span class="switch"></span>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <div class="navigation-bar">
+    <div class="logo-container">
+        <img src="tempLogo.png" alt="Logo" class="logo">
+    </div>
+    <div class="mode-toggle-container">
+        <input type="checkbox" class="dark-mode-checkbox" id="darkModeCheckbox">
+        <label for="darkModeCheckbox" class="dark-mode-label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <span class="dark-mode-ball"></span>
+        </label>
+    </div>
+</div>
+
+
+  <section class="home">
+
+    <div class="responsive-container">
+      <div class="responsive-text">
+        <h1  class="txt-top-img">Sakha</h1>
+        <p   class="top-content-para">Your Guiding Light in a World Full of Distractions. We Provide the
+          Direction you need to Transfrom Your Life.</p>
+      </div>
+      <img class="responsive-img" src="logo.png" alt="Sample Image">
+    </div>
+
+    <h2>Explore What Sakha Offers:</h2>
+    </u></b>
+    <h3>Are you feeling bored or seeking guidance? <br>Chat with <span class="gradient-text">Sakha Ai</span> for
+      entertaining conversations and insightful responses drawn from scriptures, offering solutions to life's queries.
+    </h3>
+    <i>
+      <h3>"Where boredom ends, wisdom begins."</h3>
+    </i>
+    <div class="Sk-box">
+      <div class="Sk-header">Preview access</div>
+      <div class="Sk-title"> <span class="gradient-text">Chat with Sakha</span></div>
+      <div class="Sk-description">
+        <div class="chat-container" id="chatContainer">
+          <div class="item">
+            <div class="msg">
+              <div class="messages__item messages__item--operator">
+                <p style="font-size: 20px;width:100%;align-items: last baseline; display: flex;">Hello</p>
+                <div class="icon icon-right"> <img class="user" src="man1.png" alt=""> </div>
+              </div>
+              <div class="messages__item messages__item--visitor">
+                <div class="icon icon-left"> <img class="user" src="krishna1.png" alt=""> </div>
+                <p style="font-size: 20px; width:100%;align-items: last baseline; display: flex;">Hare Krishna</p>
+              </div>
+              <div class="messages__item messages__item--operator">
+                <p style="font-size: 20px;width:100%;align-items: last baseline; display: flex;">who are you</p>
+                <div class="icon icon-right"> <img class="user" src="man1.png" alt=""> </div>
+              </div>
+              <div class="messages__item messages__item--visitor">
+                <div class="icon icon-left"> <img class="user" src="krishna1.png" alt=""> </div>
+                <p style="font-size: 20px; width:100%;align-items: last baseline; display: flex;">Am your virtual</p>
+              </div>
+            </div>
+            <div class="messages__item messages__item--operator">
+              <p style="font-size: 20px;width:100%;align-items: last baseline; display: flex;">Hello</p>
+              <div class="icon icon-right"> <img class="user" src="man1.png" alt=""> </div>
+            </div>
+            <div class="messages__item messages__item--visitor">
+              <div class="icon icon-left"> <img class="user" src="krishna1.png" alt=""> </div>
+              <p style="font-size: 20px; width:100%;align-items: last baseline; display: flex;">Hare Krishna</p>
+            </div>
+            <div class="messages__item messages__item--operator">
+              <p style="font-size: 20px;width:100%;align-items: last baseline; display: flex;">who are you</p>
+              <div class="icon icon-right"> <img class="user" src="man1.png" alt=""> </div>
+            </div>
+            <div class="messages__item messages__item--visitor">
+              <div class="icon icon-left"> <img class="user" src="krishna1.png" alt=""> </div>
+              <p style="font-size: 20px; width:100%;align-items: last baseline; display: flex;">Am your virtual</p>
+            </div>
+
+          </div>
+        </div>
+        <input type="text" placeholder="Type your message..." style="border-radius: 10px">
+      </div>
+      <button class="try-button">Try Chat</button>
+    </div>
+
+    <h3>All Leaders are readers. As we know, Knowledge, is power, and one needs the knowledge to grow in life, so we
+      have inculcated some of the most useful books, meant for holistic development.</h3>
+    <i>
+      <h3>"Leaders are readers. Knowledge is power"</h3>
+    </i>
+
+    <h3>Find peace and solace amidst life's challenges via <span class="gradient-text">Mantra meditation</span>. Access
+      digital chanting beads for effortless chanting, drawing from diverse spiritual traditions.</h3>
+    <i>
+      <h3>"In the age of quarrels and depression, find solace in chanting."</h3>
+    </i>
+    <div class="Sk-box" id="videoContainer">
+      <div class="Sk-header">Preview access</div>
+      <div class="Sk-title"> <span class="gradient-text">Mantra Meditation</span></div>
+      <div class="Sk-description">
+        <img id="gif" src="mala.gif" alt="GIF">
+      </div>
+      <button class="try-button">Try Chanting</button>
+    </div>
+
+    <h3>Embark on a journey of self-discovery with our <span class="gradient-text">Challenge Game</span>. Over 50 days,
+      engage in a series of 50 tasks designed to foster focus and promote a winning, healthy lifestyle.</h3>
+    <i>
+      <h3>"Embrace the challenge and unlock your potential."</h3>
+    </i>
+
+
+    <div class="Sk-box" id="videoContainer">
+      <div class="Sk-header">Preview access</div>
+      <div class="Sk-title"> <span class="gradient-text">The Challenge Game</span></div>
+      <div class="Sk-description">
+        <img class="game-play-img" src="game.png" alt="Image" width="350">
+      </div>
+      <button class="try-button">Let's Play?</button>
+    </div>
+    <h3>All Leaders are readers. As we know, Knowledge, is power, and one needs the knowledge to grow in life, so we
+      have inculcated some of the most useful books, meant for holistic development.</h3>
+    <i>
+      <h3>"Leaders are readers. Knowledge is power"</h3>
+    </i>
+
+    <section id="ramayana">
+      <div class="container">
+        <h1 class="gradient-text"><b>Ramayana and More</b></h1>
+        <div class="slider">
+          <div class="owl-carousel">
+            <div class="slider-card">
+              <div>
+                <a href="https://drive.google.com/file/d/198VkYphpTaigNQM2RpCwN4EWfQzMeIPs/view?usp=drive_link">
+                  <img src="Assets/shrimad-valmiki-ramayan.jpg" alt="Ramayana" />
+                </a>
+              </div>
+              <h5 class="mb-0 text-center p-2"><b>Shrimad Valmiki Ramayana</b></h5>
+            </div>
+            <div class="slider-card">
+              <div>
+                <a href="https://drive.google.com/file/d/19noJenLiB2AB30xMh6QfJuXIr378mdjJ/view?usp=drive_link">
+                  <img src="Assets/Ramayana-tamil.png" alt="Ramayana Tamil" />
+                </a>
+              </div>
+              <h5 class="mb-0 text-center p-2"><b>Ramayana Tamil</b></h5>
+            </div>
+            <div class="slider-card">
+              <div>
+                <a href="https://drive.google.com/file/d/1dof6-gyvERAcNyXncmzuEeYwR2xyvnKV/view?usp=drive_link">
+                  <img src="Assets/Ramcharitmanas.png" alt="RamcharitmanasHindiAnuvad" />
+                </a>
+              </div>
+              <h5 class="mb-0 text-center p-2"><b>Shri Ramcharitmanas Hindi Anuvad</b></h5>
+            </div>
+            <div class="slider-card">
+              <div>
+                <a href="https://drive.google.com/file/d/1Rhb1ZvgXzb02ioXLD0Ae-s0RuOSps2NM/view?usp=drive_link">
+                  <img src="Assets/ramcha.jpg" alt="SriRamchritmanasEnglish" />
+                </a>
+              </div>
+              <h5 class="mb-0 text-center p-2"><b>Shri Ramcharitmanas English</b></h5>
+            </div>
+            <div class="slider-card">
+              <div>
+                <a href="https://drive.google.com/file/d/1aWGkcrMf6qftEsvh_QTsnAZQjMZjUYzV/view?usp=drive_link">
+                  <img src="Assets/Sunderkand-hindi.png" alt="sunderkand-hindi" />
+                </a>
+              </div>
+              <h5 class="mb-0 text-center p-2"><b>Sunderkand Hindi</b></h5>
+            </div>
+            <div class="slider-card">
+              <div>
+                <a href="https://drive.google.com/file/d/11c8uiAal8-lsECrU0dbL0mEgIZlnfalF/view?usp=drive_link">
+                  <img src="Assets/Sunderkand-english.jpg" alt="Sunderkand_Path" />
+                </a>
+              </div>
+              <h5 class="mb-0 text-center p-2"><b>Sunderkand Path</b></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <button class="try-button">Try Chanting</button> -->
+    </section>
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="owl.carousel.mincopy.js"></script>
+  <script src="owlscriptcopy.js"></script>
+  <!-- <script src="books.js"></script> -->
+  <script src="dummy.js"></script>
+
+  <script>
+    const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+    toggle.addEventListener("click", () => {
+      sidebar.classList.toggle("close");
+    })
+
+    searchBtn.addEventListener("click", () => {
+      sidebar.classList.remove("close");
+    })
+
+    modeSwitch.addEventListener("click", () => {
+      body.classList.toggle("dark");
+
+      if (body.classList.contains("dark")) {
+        modeText.innerText = "Light mode";
+      } else {
+        modeText.innerText = "Dark mode";
+
+      }
+    });
+
+    const darkModeCheckbox = document.getElementById("darkModeCheckbox");
+    darkModeCheckbox.addEventListener("change", () => {
+      document.body.classList.toggle("dark");
+    });
+
+  </script>
+
+</body>
+
+</html>
